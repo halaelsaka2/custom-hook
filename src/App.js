@@ -49,7 +49,7 @@ function App() {
         Tailwind
       </div>
       {error && <div>Error...{error}</div>}
-      {loading && <div>Loading...{error}</div>}
+      {loading && <div>Loading...</div>}
       {value === "scss" ? (
         <div className="flex flex-wrap">
           {data?.map((movie, index) => {
