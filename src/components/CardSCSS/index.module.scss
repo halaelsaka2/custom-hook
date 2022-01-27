@@ -1,0 +1,41 @@
+.movie_card {
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 1%;
+  margin-bottom: 30px;
+
+  &__image_wrapper {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    &__image_wrapper_img {
+      width: 100%;
+      border-style: none;
+    }
+    &__mask_data {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: #fff;
+      background: #00000080;
+      cursor: pointer;
+      opacity: 0;
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s;
+      &:hover {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
